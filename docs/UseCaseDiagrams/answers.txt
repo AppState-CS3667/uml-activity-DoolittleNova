@@ -1,1 +1,26 @@
-
+1. What are the primary actors?
+  Shopper, which is divided into two children: Minor and Adult.
+2. What is/are the secondary actor(s)?
+  Employee
+3. What type of word describes the use cases? (noun, adjective, verb, adverb, etc.)
+  Use cases are described as verbs. Examples being: "Scan Items," "Verify ID," and "Pay."
+4. What type of word describes the actors?
+  Actors are described as nouns. Examples being: "Shopper," "Adult," and "Employee."
+5. Why is/are the primary actor(s) primary and not secondary?
+  Primary actors are the providers of actions and input to the system as a thing-which-reacts. An example being that a
+  Shopper will interact with the system via "Scan Items." Primary Actors are the end-point for a system. In this case,
+  the system is a "Self checkout" machine, where a Shopper will "Scan [their] Items," and, potentially, "Provide [their]
+  ID" for (assumed) 21+ items.
+6. Why is/are the secondary actors(s) secondary and not primary?
+  Secondary Actors are reactive actors. The Employee (a secondary actor) reacts to the need to "Verify ID" by reacting
+  to such a request (to verify the ID). While there is a lacking connector from Shopper requesting Assistance, it
+  should be assumed that the Employee does not simply provision assistance to nobody (although I'm certain most managers
+  would love the very thought of a person debasing themselves so), but rather acts to fashion a Shopper with assistance   when requested.
+7. Why does Verify ID extend Scan Items?
+  Verify ID extends Scan Items presumably because some Items require an ID to be purchased. Extending Scan Items this
+  way enables Verify ID to be apart of that process and allow for the contingency that, say, a twenty-year-old cannot
+  buy cigarettes and beer at a grocery store, but can continue with their scanning after such items have been removed
+  from their (ideally temporary) possession.
+8. Why does Scan Items include Check Cart for Items?
+  Check Cart for Items acts as a final step for Scan Items for an Employee to make sure the Shopper hasn't committed
+  accounting fraud by purchasing a, say, non-existent orange.
