@@ -1,7 +1,8 @@
-public abstract class Burner {
+public class Burner {
     protected double diameter, maxTemp, minTemp;
     protected Boolean isHot;
 
+    public Burner() {}
     public Burner(double maxTemp, double minTemp, double diameter) {
         this.maxTemp = maxTemp;
         this.minTemp = minTemp;
